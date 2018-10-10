@@ -1,0 +1,131 @@
+body {
+  background: #415a6c;
+  margin: 0;
+  font-family: 'Oswald';
+}
+
+a {
+	padding-top: 80px;
+}
+a span {
+  z-index: 999;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb 4s infinite;
+	animation: sdb 4s infinite;
+	opacity: 0;
+	box-sizing: border-box;
+}
+a span:nth-of-type(1) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+a span:nth-of-type(2) {
+	top: 116px;
+	-webkit-animation-delay: .15s;
+	animation-delay: .15s;
+}
+a span:nth-of-type(3) {
+	top: 132px;
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+@-webkit-keyframes sdb {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 1080px;
+}
+.parallax-layer {
+  width: 100%;
+  height: 1080px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 1920px 1080px;
+}
+  .layer-1 {
+    z-index: 1;
+    background-image: url('landscape_moonwolf_7.png');
+  }
+  .layer-2 {
+    z-index: 2;
+    background-image: url('landscape_moonwolf_6-5.png');
+  }
+  .layer-3 {
+    z-index: 3;
+    background-image: url('landscape_moonwolf_5.png');
+  }
+  .layer-4 {
+    z-index: 4;
+    background-image: url('landscape_moonwolf_4.png');
+  }
+  .layer-5 {
+    z-index: 5;
+    background-image: url('landscape_moonwolf_3.png');
+  }
+  .layer-6 {
+    z-index: 6;
+    background-image: url('landscape_moonwolf_2.png');
+  }
+  .layer-7 {
+    z-index: 7;
+    background-image: url('landscape_moonwolf_1.png');
+  }
+
+.clear-parralax{
+  background: linear-gradient(#023d1a, #262626);
+  position: relative;
+  top: 1080px;
+  width: 100%;
+  min-height: 1500px;
+
+}
+
+.content {
+  background: linear-gradient(#023d1a, #262626);
+  position: absolute;
+  top: 1090px;
+  width: 100%;
+  min-height: 1500px;
+}
+  .content h1 {
+    font-family: Cookie, cursive;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
